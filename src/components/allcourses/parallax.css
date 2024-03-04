@@ -1,0 +1,43 @@
+.parallax-container {
+    position: relative;
+    /* height: 100vh; */
+    overflow: hidden;
+  }
+  
+  .parallax-bg {
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+    z-index: -1;
+    /* Adjust the scale factor for different parallax speeds */
+    transform: scale(1.2); /* Increase or decrease for more or less parallax effect */
+  }
+  
+  .parallax-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8); /* Background color or gradient for content */
+  }
+  
+  /* You can add more styling as needed */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
